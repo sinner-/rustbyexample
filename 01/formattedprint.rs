@@ -25,13 +25,7 @@ fn main() {
 
     struct Structure(i32);
 
-    impl fmt::Display for Structure {
-        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-            write!(f, "{}", self)
-        }
-    }
-
-    println!("This {:?} struct won't print", Structure(3).0);
+    println!("This {:?} struct won't print", Structure(3));
 
     println!("{number:.3}", number=3.141592);
 }
