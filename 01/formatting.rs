@@ -24,7 +24,7 @@ struct Color {
 }
 impl UpperHex for Color {
     fn fmt(&self, f: &mut Formatter) -> fmt:: Result {
-        write!(f, "0x{:X}{:X}{:X}", self.red, self.green, self.blue)
+        write!(f, "0x{:>02X}{:>02X}{:>02X}", self.red, self.green, self.blue)
     }
 }
 impl Display for Color {
